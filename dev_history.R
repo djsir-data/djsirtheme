@@ -20,8 +20,8 @@ use_data_raw()
 
 #use_pipe()
 use_version("patch")
-use_news_md()
-use_vignette('djpr-import-r') # user guide
+
+use_vignette('djsirtheme') # user guide
 
 # setup git branch rename master as main
 shell("git add .")
