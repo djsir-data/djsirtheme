@@ -2,8 +2,11 @@ Package: djsirtheme
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.1
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Authors@R: 
+    c(
+    person("Annett", "Finger", email = "annett.finger@ecodev.vic.gov.au", role = c('cre','aut')),
+    person(given = "Department of Jobs, Skills Industry and Regions (Victoria)", role = c("cph", "fnd"))
+    )
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: MIT + file LICENSE
