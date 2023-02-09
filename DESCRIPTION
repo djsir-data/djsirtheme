@@ -1,14 +1,13 @@
 Package: djsirtheme
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Theme package for the Department of Jobs, Skills, Industry and Regions (Victoria, Australia)
 Version: 0.1.1
 Authors@R: 
     c(
     person("Annett", "Finger", email = "annett.finger@ecodev.vic.gov.au", role = c('cre','aut')),
     person(given = "Department of Jobs, Skills Industry and Regions (Victoria)", role = c("cph", "fnd"))
     )
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: The goal of djsirtheme is to enable users to easily create ggplot2 and highcharts charts that look good and are consistent with the style guide of the Victorian Department of Jobs, Skills, Industry and Regions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
