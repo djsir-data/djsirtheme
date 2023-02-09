@@ -7,7 +7,7 @@ Authors@R:
     person("Annett", "Finger", email = "annett.finger@ecodev.vic.gov.au", role = c('cre','aut')),
     person(given = "Department of Jobs, Skills Industry and Regions (Victoria)", role = c("cph", "fnd"))
     )
-Description: The goal of djsirtheme is to enable users to easily create ggplot2 and highcharts charts that look good and are consistent with the style guide of the Victorian Department of Jobs, Skills, Industry and Regions.
+Description: The goal of djsirtheme is to enable users to easily create ggplot2 and highcharts charts that are consistent with the style guide of the Victorian Department of Jobs, Skills, Industry and Regions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
