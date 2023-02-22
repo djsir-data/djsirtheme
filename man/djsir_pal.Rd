@@ -2,14 +2,18 @@
 % Please edit documentation in R/djsir_pal.R
 \name{djsir_pal}
 \alias{djsir_pal}
-\title{DJSIR colour palette definition}
+\title{DJSIR colour palette definition (11 colours)}
 \usage{
 djsir_pal(n = 1)
 
 djsir_pal(n = 1)
 }
 \arguments{
-\item{n}{default is 1. If n is >11, the colour palette is doubled, starting from 1 again}
+\item{n}{numeric. The number of levels in your colour scale = number of colours required.
+Minimum and default value is 1, maximum is 11. More than 6 is not recommended.
+If n is >11, the colour palette is doubled, starting from 1 again.}
+
+\item{...}{arguments passed to `ggplot2::scale_*_manual()`}
 }
 \value{
 character vector
@@ -17,7 +21,7 @@ character vector
 palette which is a character vector of colours
 }
 \description{
-DJSIR colour palette definition
+DJSIR colour palette definition (11 colours)
 
 Title Function takes an integer and returns colours
 }
