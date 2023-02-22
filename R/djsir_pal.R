@@ -63,11 +63,15 @@ djsir_pal <- function(n = 1) {
 
 #' Title Defines what colours to be used depending on how many are needed
 #'
+#' @param n numeric. The number of levels in your colour scale = number of colours required.
+#'             Minimum and default value is 1, maximum is 11. More than 6 is not recommended.
+#' @param ... arguments passed to `ggplot2::scale_*_manual()`
 #' @return palette
 #' @export
 #'
-#' @examples
-regular_palette <- function() {
+#' @examples TBD
+
+regular_palette <- function(n) {
   if (n == 1) {
     palette <- djsir_cobalt                          #004C97
   } else if (n == 2) {
@@ -164,22 +168,20 @@ regular_palette <- function() {
       djsir_cool_grey_11,                            #53565a
       djsir_persimmon,                               #E35205
       djsir_royal_blue                               #13345E
-    ) else if (n > 11) {
-      rep(djsir_pal, ceiling(length(djsir_pal) / n))[1:n]
-    }
-  }
+    )
+  } else if (n > 11) {
+    rep(djsir_pal, ceiling(length(djsir_pal) / n))[1:n]
+     }
 
   palette
 }
 
-#' Title DJSIR wrapping functions defining colour and fill of a graph object
+#' Title DJSIR wrapping function defining colour for the fill of a graph object
 #'
-#' @param ...
-#'
-#' @return
+#' @param ... arguments passed to `ggplot2::scale_*_manual()`
 #' @export
 #'
-#' @examples
+#' @examples TBD
 
 scale_fill_djsir <- function(...) {
 
@@ -190,6 +192,13 @@ scale_fill_djsir <- function(...) {
     ...
   )
 }
+
+#' Title DJSIR function defining the colour of a graph object
+#'
+#' @param ... arguments passed to `ggplot2::scale_*_manual()`
+#' @export
+#'
+#' @examples TBD
 
 scale_colour_djsir <- function(...){
 

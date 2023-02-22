@@ -3,17 +3,17 @@
 \docType{data}
 \name{djsir_colours}
 \alias{djsir_colours}
-\alias{djpr_cobalt}
-\alias{djpr_bondi_blue}
-\alias{djpr_lima}
-\alias{djpr_electric_lime}
-\alias{djpr_royal_blue}
-\alias{djpr_green}
-\alias{djpr_persimmon}
-\alias{djpr_dark_tangerine}
-\alias{djpr_black_rock}
-\alias{djpr_cool_grey_11}
-\alias{djpr_cool_grey_1}
+\alias{djsir_cobalt}
+\alias{djsir_bondi_blue}
+\alias{djsir_lima}
+\alias{djsir_electric_lime}
+\alias{djsir_royal_blue}
+\alias{djsir_green}
+\alias{djsir_persimmon}
+\alias{djsir_dark_tangerine}
+\alias{djsir_black_rock}
+\alias{djsir_cool_grey_11}
+\alias{djsir_cool_grey_1}
 \title{DJSIR colours}
 \format{
 An object of class \code{character} of length 1.
@@ -39,27 +39,27 @@ An object of class \code{character} of length 1.
 An object of class \code{character} of length 1.
 }
 \usage{
-djpr_cobalt
+djsir_cobalt
 
-djpr_bondi_blue
+djsir_bondi_blue
 
-djpr_lima
+djsir_lima
 
-djpr_electric_lime
+djsir_electric_lime
 
-djpr_royal_blue
+djsir_royal_blue
 
-djpr_green
+djsir_green
 
-djpr_persimmon
+djsir_persimmon
 
-djpr_dark_tangerine
+djsir_dark_tangerine
 
-djpr_black_rock
+djsir_black_rock
 
-djpr_cool_grey_11
+djsir_cool_grey_11
 
-djpr_cool_grey_1
+djsir_cool_grey_1
 }
 \description{
 A set of colours and their # values, as defined by the DJSIR colour scheme
