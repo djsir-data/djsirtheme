@@ -1,4 +1,4 @@
-#' @title DJSIR colour palette definition
+#' @title DJSIR colour palette definition (11 colours)
 #'
 #' @return character vector
 #' @export
@@ -18,10 +18,13 @@ djsir_pal <- c(
   djsir_cool_grey_1
 )
 
+
 #' Title Function takes an integer and returns colours
 #'
-#' @param n default is 1. If n is >11, the colour palette is doubled, starting from 1 again
-#'
+#' @param n numeric. The number of levels in your colour scale = number of colours required.
+#'             Minimum and default value is 1, maximum is 11. More than 6 is not recommended.
+#'             If n is >11, the colour palette is doubled, starting from 1 again.
+#' @param ... arguments passed to `ggplot2::scale_*_manual()`
 #' @return palette which is a character vector of colours
 #' @export
 #'
@@ -54,24 +57,8 @@ djsir_pal <- c(
 #'   theme_djsir() +
 #'   scale_fill_djsir(3)
 #' p
+
 djsir_pal <- function(n = 1) {
-
-  palette <- regular_palette(n)
-
-  palette
-}
-
-#' Title Defines what colours to be used depending on how many are needed
-#'
-#' @param n numeric. The number of levels in your colour scale = number of colours required.
-#'             Minimum and default value is 1, maximum is 11. More than 6 is not recommended.
-#' @param ... arguments passed to `ggplot2::scale_*_manual()`
-#' @return palette
-#' @export
-#'
-#' @examples TBD
-
-regular_palette <- function(n) {
   if (n == 1) {
     palette <- djsir_cobalt                          #004C97
   } else if (n == 2) {
@@ -188,8 +175,7 @@ scale_fill_djsir <- function(...) {
   ggplot2::discrete_scale(
     "fill",
     "DJSIR",
-    djsir_pal(n),
-    ...
+    djsir_pal(n)
   )
 }
 
