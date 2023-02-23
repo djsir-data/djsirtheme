@@ -4,7 +4,7 @@
 #' @export
 #'
 
-djsir_pal <- c(
+djsir_palette <- c(
   djsir_cobalt,
   djsir_bondi_blue,
   djsir_lima,
@@ -157,7 +157,7 @@ djsir_pal <- function(n = 1) {
       djsir_royal_blue                               #13345E
     )
   } else if (n > 11) {
-    rep(djsir_pal, ceiling(length(djsir_pal) / n))[1:n]
+    rep(djsir_palette, ceiling(length(djsir_palette) / n))[1:n]
      }
 
   palette
@@ -168,14 +168,24 @@ djsir_pal <- function(n = 1) {
 #' @param ... arguments passed to `ggplot2::scale_*_manual()`
 #' @export
 #'
-#' @examples TBD
+#' @examples
+#' library(ggplot2)
+#'
+#' p <- ggplot(mtcars, aes(x = mpg, fill = factor(carb))) +
+#' geom_histogram() +
+#' theme_djsir() +
+#' scale_fill_djsir()
+#'
+#' p
+
 
 scale_fill_djsir <- function(...) {
 
   ggplot2::discrete_scale(
     "fill",
     "DJSIR",
-    djsir_pal(n)
+    djsir_pal,
+    ...
   )
 }
 
@@ -184,14 +194,21 @@ scale_fill_djsir <- function(...) {
 #' @param ... arguments passed to `ggplot2::scale_*_manual()`
 #' @export
 #'
-#' @examples TBD
+#' @examples
+#' library(ggplot2)
+#'
+#' p <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
+#'      geom_point() +
+#'      theme_djsir() +
+#'      scale_colour_djsir()
+#' p
 
 scale_colour_djsir <- function(...){
 
   ggplot2::discrete_scale(
     "colour",
     "DJSIR",
-    function(n) rep(djsir_pal, ceiling(length(djsir_pal) / n))[1:n],
+    djsir_pal,
     ...
   )
 }
