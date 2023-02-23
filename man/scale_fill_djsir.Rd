@@ -13,5 +13,12 @@ scale_fill_djsir(...)
 Title DJSIR wrapping function defining colour for the fill of a graph object
 }
 \examples{
-TBD
+library(ggplot2)
+
+p <- ggplot(mtcars, aes(x = mpg, fill = factor(carb))) +
+geom_histogram() +
+theme_djsir() +
+scale_fill_djsir()
+
+p
 }

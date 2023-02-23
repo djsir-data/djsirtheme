@@ -13,5 +13,11 @@ scale_colour_djsir(...)
 Title DJSIR function defining the colour of a graph object
 }
 \examples{
-TBD
+library(ggplot2)
+
+p <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
+     geom_point() +
+     theme_djsir() +
+     scale_colour_djsir()
+p
 }
