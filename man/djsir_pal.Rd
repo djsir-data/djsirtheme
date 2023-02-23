@@ -2,10 +2,8 @@
 % Please edit documentation in R/djsir_pal.R
 \name{djsir_pal}
 \alias{djsir_pal}
-\title{DJSIR colour palette definition (11 colours)}
+\title{Title Function takes an integer and returns colours}
 \usage{
-djsir_pal(n = 1)
-
 djsir_pal(n = 1)
 }
 \arguments{
@@ -16,13 +14,9 @@ If n is >11, the colour palette is doubled, starting from 1 again.}
 \item{...}{arguments passed to `ggplot2::scale_*_manual()`}
 }
 \value{
-character vector
-
 palette which is a character vector of colours
 }
 \description{
-DJSIR colour palette definition (11 colours)
-
 Title Function takes an integer and returns colours
 }
 \examples{
