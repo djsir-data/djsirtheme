@@ -98,38 +98,6 @@ theme_djsir_base <- function(base_size = 12,
                           2),
         vjust = 0
       ),
-      legend.background = element_rect(colour = NA),
-      legend.spacing = unit(half_line, "pt"),
-      legend.spacing.x = NULL,
-      legend.spacing.y = NULL,
-      legend.margin = margin(),
-      legend.key = element_rect(
-        fill = "white",
-        colour = "white"
-      ),
-      legend.key.size = unit(1, "lines"),
-      legend.key.height = NULL,
-      legend.key.width = NULL,
-      legend.text = element_text(
-        size = rel(1),
-        margin = margin(
-          l = 0,
-          r = base_size / 4, unit = "pt"
-        )
-      ),
-      legend.text.align = 0,
-      legend.title = element_blank(),
-      legend.title.align = NULL,
-      legend.position = legend,
-      legend.direction = "horizontal",
-      legend.justification = "center",
-      legend.box = "vertical",
-      legend.box.margin = margin(
-        0, 0,
-        0, 0, "cm"
-      ),
-      legend.box.background = element_blank(),
-      legend.box.spacing = unit(half_line, "pt"),
       panel.background = element_rect(colour = NA),
       panel.border = element_blank(),
       panel.grid = element_line(colour = djsirtheme::djsir_cool_grey_1),
