@@ -7,7 +7,7 @@ djsirify_geom_defaults <- function() {
   update_geom_defaults(
     "point",
     list(
-      colour = djsirtheme::djsir_royal_blue,
+      colour = djsirtheme::djsir_cobalt,
       size = 6 / .pt
     )
   )
@@ -15,7 +15,7 @@ djsirify_geom_defaults <- function() {
     "bar",
     list(
       colour = "white",
-      fill = djsirtheme::djsir_royal_blue,
+      fill = djsirtheme::djsir_cobalt,
       size = 0.75 / .pt
     )
   )
@@ -23,14 +23,14 @@ djsirify_geom_defaults <- function() {
     "col",
     list(
       colour = "white",
-      fill = djsirtheme::djsir_royal_blue,
+      fill = djsirtheme::djsir_cobalt,
       size = 0.75 / .pt
     )
   )
   update_geom_defaults(
     "line",
     list(
-      colour = djsirtheme::djsir_royal_blue,
+      colour = djsirtheme::djsir_cobalt,
       size = 3 / .pt
     )
   )
@@ -44,15 +44,15 @@ djsirify_geom_defaults <- function() {
   update_geom_defaults(
     "smooth",
     list(
-      colour = djsirtheme::djsir_royal_blue,
-      fill = djsirtheme::djsir_royal_blue
+      colour = djsirtheme::djsir_cobalt,
+      fill = djsirtheme::djsir_cobalt
     )
   )
 
   update_geom_defaults(
     "path",
     list(
-      colour = djsirtheme::djsir_royal_blue,
+      colour = djsirtheme::djsir_cobalt,
       size = 3 / .pt
     )
   )
@@ -70,7 +70,7 @@ djsirify_geom_defaults <- function() {
     list(
       size = 18 / .pt,
       fill = "white",
-      colour = djsirtheme::djsir_royal_blue
+      colour = djsirtheme::djsir_cobalt
     )
   )
 
@@ -79,99 +79,99 @@ djsirify_geom_defaults <- function() {
     list(
       size = 18 / .pt,
       fill = "white",
-      colour = djsirtheme::djsir_royal_blue
+      colour = djsirtheme::djsir_cobalt
     )
   )
 
   update_geom_defaults(
     "area",
     list(
-      fill = djsirtheme::djsir_royal_blue,
-      col = djsirtheme::djsir_royal_blue
+      fill = djsirtheme::djsir_cobalt,
+      col = djsirtheme::djsir_cobalt
     )
   )
 
   update_geom_defaults(
     "density",
     list(
-      fill = djsirtheme::djsir_royal_blue,
-      col = djsirtheme::djsir_royal_blue
+      fill = djsirtheme::djsir_cobalt,
+      col = djsirtheme::djsir_cobalt
     )
   )
 
   update_geom_defaults(
     "dotplot",
     list(
-      fill = djsirtheme::djsir_royal_blue,
-      col = djsirtheme::djsir_royal_blue
+      fill = djsirtheme::djsir_cobalt,
+      col = djsirtheme::djsir_cobalt
     )
   )
 
   update_geom_defaults(
     "polygon",
     list(
-      fill = djsirtheme::djsir_royal_blue,
-      col = djsirtheme::djsir_royal_blue
+      fill = djsirtheme::djsir_cobalt,
+      col = djsirtheme::djsir_cobalt
     )
   )
 
   update_geom_defaults(
     "path",
-    list(col = djsirtheme::djsir_royal_blue)
+    list(col = djsirtheme::djsir_cobalt)
   )
 
   update_geom_defaults(
     "ribbon",
     list(
-      fill = djsirtheme::djsir_royal_blue,
-      col = djsirtheme::djsir_royal_blue
+      fill = djsirtheme::djsir_cobalt,
+      col = djsirtheme::djsir_cobalt
     )
   )
 
   update_geom_defaults(
     "rect",
     list(
-      fill = djsirtheme::djsir_royal_blue,
-      col = djsirtheme::djsir_royal_blue
+      fill = djsirtheme::djsir_cobalt,
+      col = djsirtheme::djsir_cobalt
     )
   )
 
   update_geom_defaults(
     "boxplot",
     list(
-      fill = djsirtheme::djsir_royal_blue,
-      col = djsirtheme::djsir_royal_blue
+      fill = djsirtheme::djsir_cobalt,
+      col = djsirtheme::djsir_cobalt
     )
   )
 
   update_geom_defaults(
     "crossbar",
     list(
-      fill = djsirtheme::djsir_royal_blue,
-      col = djsirtheme::djsir_royal_blue
+      fill = djsirtheme::djsir_cobalt,
+      col = djsirtheme::djsir_cobalt
     )
   )
 
   update_geom_defaults(
     "errorbar",
-    list(col = djsirtheme::djsir_royal_blue)
+    list(col = djsirtheme::djsir_cobalt)
   )
 
   update_geom_defaults(
     "linerange",
-    list(col = djsirtheme::djsir_royal_blue)
+    list(col = djsirtheme::djsir_cobalt)
   )
 
   update_geom_defaults(
     "pointrange",
-    list(col = djsirtheme::djsir_royal_blue)
+    list(col = djsirtheme::djsir_cobalt)
   )
 
   update_geom_defaults(
     "tile",
     list(
       col = "white",
-      fill = djsirtheme::djsir_royal_blue
+      fill = djsirtheme::djsir_cobalt
     )
   )
 }
