@@ -2,8 +2,8 @@
 #'
 #' @param base_size Default is 12
 #' @param base_family Default is 'sans'
-#' @param base_line_size
-#' @param base_rect_size
+#' @param base_line_size Size of the base line
+#' @param base_rect_size Size of the rectangle (?)
 #' @param background Default is 'white'
 #' @param panel_borders Default is FALSE
 #'
