@@ -20,7 +20,7 @@ theme_djsir_base(
 
 \item{base_line_size}{Size of the base line}
 
-\item{base_rect_size}{Size of the rectangle (?)}
+\item{base_rect_size}{Size of the rectangle}
 
 \item{background}{Default is 'white'}
 

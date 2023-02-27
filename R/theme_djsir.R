@@ -15,7 +15,7 @@
 #' @export
 
 theme_djsir <- function(base_size = 14,
-                        base_family = getOption("djprtheme.base_font_family", "sans"),
+                        base_family = getOption("djsirtheme.base_font_family", "sans"),
                         chart_type = "normal",
                         flipped = FALSE,
                         background = "white",
