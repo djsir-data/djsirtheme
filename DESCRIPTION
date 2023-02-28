@@ -27,5 +27,6 @@ Imports:
     scales,
     showtext,
     sysfonts,
-    vdiffr
+    vdiffr,
+    patchwork
     
