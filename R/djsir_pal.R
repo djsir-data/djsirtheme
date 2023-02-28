@@ -151,7 +151,7 @@ djsir_pal <- function(n = 1) {
       djsir_royal_blue                               #13345E
     )
   } else if (n > 11) {
-    rep(djsir_palette, ceiling(length(djsir_palette) / n))[1:n]
+    palette <- rep(djsir_palette, ceiling(n / length(djsir_palette)))[1:n]
      }
 
   palette
