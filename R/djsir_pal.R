@@ -1,8 +1,3 @@
-#' @title DJSIR colour palette definition (11 colours)
-#'
-#' @return character vector
-#' @export
-#'
 
 djsir_palette <- c(
   djsir_cobalt,
@@ -24,12 +19,11 @@ djsir_palette <- c(
 #' @param n numeric. The number of levels in your colour scale = number of colours required.
 #'             Minimum and default value is 1, maximum is 11. More than 6 is not recommended.
 #'             If n is >11, the colour palette is doubled, starting from 1 again.
-#' @param ... arguments passed to `ggplot2::scale_*_manual()`
 #' @return palette which is a character vector of colours
 #' @export
 #'
 #' @examples
-#' #' library(ggplot2)
+#' library(ggplot2)
 #'
 #' p <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
 #'   geom_point() +
