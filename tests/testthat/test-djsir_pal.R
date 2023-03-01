@@ -1,5 +1,5 @@
-test_that("djsir_*_manual() wrappers work", {
-  expect_s3_class(scale_colour_djsir(5), "ggproto")
+test_that("scale_*_djsir() wrappers work", {
+  expect_s3_class(scale_colour_djsir(13), "ggproto")
   expect_s3_class(scale_fill_djsir(5), "ggproto")
 })
 
@@ -22,7 +22,7 @@ djsir_colours <- lapply(c(1:11), make_col_tibble) %>%
 djsir_colours$col <- factor(djsir_colours$col)
 
 djsir_colours <- djsir_colours %>%
-  dplyr::mutate(n_desc = dplyr::if_else(n == 1, "n = 1", paste0("  ", n)))
+  dplyr::mutate(n_desc = dplyr::if_else(n == 1, "  1", paste0("  ", n)))
 
 pyramid <- djsir_colours %>%
   ggplot(aes(
@@ -48,4 +48,21 @@ test_that("Colour pyramid is unchanged", {
   vdiffr::expect_doppelganger("pyramid",
                               pyramid
   )
+})
+
+test_that("djsir_pal.R works for more than 11 colours", {
+  # create data frame with 14 factors
+  data14 <- economics %>%
+    filter(uempmed > 20.5)
+
+  # create scatter graph with 14 colours
+  p <- ggplot(data14, aes(x = pce, y = date, col = factor(uempmed))) +
+    geom_point() +
+    theme_djsir() +
+    scale_colour_djsir()
+
+  expect_s3_class(p, "gg")
+  expect_equal(length(unique(data14$uempmed)), 14)
+  expect_error(print(p), NA)
+
 })
